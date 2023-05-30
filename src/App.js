@@ -97,6 +97,7 @@ function App() {
   useEffect(() => {
     connect();
     getScore();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [defaultAccount]);
 
   const createCar = async (cid) => {
